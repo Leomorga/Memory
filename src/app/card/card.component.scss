@@ -1,0 +1,40 @@
+:host {
+    .card {
+        width: 150px;
+        height: 200px;
+        margin-top: 25px;
+        border-radius: 5px;
+        background-color: grey;
+        cursor: pointer;
+        box-shadow: 10px 10px 43px -18px rgba(0, 0, 0, 0.75);
+    
+    }
+
+    .default {
+        background-color: white;
+    }
+
+    .red {
+        background-color: red;
+    }
+    
+    .lime {
+        background-color: lime;
+    }
+
+    .blue {
+        background-color: blue
+    }
+    
+    .yellow {
+        background-color: yellow;
+    }
+
+    .cyan {
+        background-color: cyan;
+    }
+
+    .magenta {
+        background-color: magenta;
+    }
+}

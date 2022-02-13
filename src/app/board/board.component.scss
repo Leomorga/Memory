@@ -1,0 +1,14 @@
+
+
+:host {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 175px);
+
+        justify-content: center;
+    }
+    p, h2 {
+        text-align: center;
+    }
+
+}

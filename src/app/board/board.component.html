@@ -1,6 +1,13 @@
-<p>board works!</p>
 
-<div class="col-3" *ngFor="let item of deck">
-  {{item}}
+<div >
+  <h2>Memory</h2>
 </div>
 
+<div *ngIf="gameActive">
+  <p class="text-center">
+    Tap the cards to reveal the duplicates!
+  </p>
+  <div  class="grid">
+    <app-card *ngFor="let item of deck" [card]="item" (click)="cardClicked(item)"></app-card>
+  </div>
+</div>

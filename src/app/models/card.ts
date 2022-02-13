@@ -1,5 +1,5 @@
 
 export interface Card {
-  id: number;
   color: string;
+  state: 'default' | 'flipped' | 'matched'
 }

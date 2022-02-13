@@ -1,2 +1,2 @@
-<p>card works!</p>
-<div>{{color}}</div>
+
+<div class="card" [ngClass]="getState() != 'default' ? getColor() : ''"></div>

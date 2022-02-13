@@ -1,0 +1,10 @@
+<h3 mat-dialog-title>You win!</h3>
+    <mat-dialog-content>
+        <div>
+            You won in {{count}} moves!
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button mat-dialog-close>Back to menu</button>
+        <button [mat-dialog-close]="true">Play Again!</button>
+    </mat-dialog-actions>
