@@ -7,6 +7,7 @@ import { CardComponent } from './card/card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VictoryDialogComponent } from './victory-dialog/victory-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,12 +15,13 @@ import { MatDialogModule } from '@angular/material/dialog';
     AppComponent,
     BoardComponent,
     CardComponent,
-    VictoryDialogComponent
+    VictoryDialogComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

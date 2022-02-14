@@ -4,7 +4,17 @@
 <div *ngIf="!gameActive">
   <p>Welcome to Memory!</p>
   <p>Press the button below to start the game.</p>
-  <div class="">
+  <div>
+    <p>Set your preferred turn timer
+    <select [(ngModel)]="gameTimer">
+      <option selected [value]="5000">5 s</option>
+      <option selected [value]="2500">2.5 s</option>
+      <option selected [value]="1000">1 s</option>
+    </select>
+  </p>
+
+  </div>
+  <div>
     <button class="button" (click)="setBoard()">Play!</button>
   </div>
 </div>

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Card } from '../models/card';
 import { COLORS } from '../mock_colors';
 import { VictoryDialogComponent } from '../victory-dialog/victory-dialog.component';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-board',
@@ -18,6 +18,7 @@ export class BoardComponent implements OnInit {
   successCount: number = 0;
   unclickableCards = false;
   gameActive: boolean = false;
+  gameTimer: number = 5000;
 
   constructor(public dialog: MatDialog) { }
 
@@ -110,7 +111,7 @@ export class BoardComponent implements OnInit {
         }
       }
       this.unclickableCards = false;
-    }, 5000);
+    }, this.gameTimer);
 
   }
 }

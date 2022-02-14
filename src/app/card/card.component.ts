@@ -17,7 +17,6 @@ export class CardComponent implements OnInit {
 
   getState(): string {
     if(this.card) {
-      console.log("returning state: " +this.card.state);
       return this.card.state;
     }
     return "";
@@ -25,7 +24,6 @@ export class CardComponent implements OnInit {
 
   getColor(): string {
     if(this.card) {
-      console.log("returning color:" +this.card.color);
       return this.card.color;
     }
     return "";
