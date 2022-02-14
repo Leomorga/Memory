@@ -19,10 +19,9 @@ export class BoardComponent implements OnInit {
   unclickableCards = false;
   gameActive: boolean = false;
 
-  constructor(public dialog: MatDialog) { } 
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
-    this.setBoard();
   }
 
   setBoard(): void {
@@ -65,15 +64,15 @@ export class BoardComponent implements OnInit {
       {
         item.state = 'flipped';
         this.flippedCards.push(item);
-  
+
         if (this.flippedCards.length === 2) {
           this.checkCardMatch();
         }
-  
+
       } else if (item.state === 'flipped') {
         item.state = 'default';
         this.flippedCards.pop();
-  
+
       }
     }
   }
@@ -90,7 +89,7 @@ export class BoardComponent implements OnInit {
       card2.state = nextState;
 
       this.flippedCards = [];
-      
+
       if (nextState === 'matched') {
         this.successCount++;
 
@@ -111,7 +110,7 @@ export class BoardComponent implements OnInit {
         }
       }
       this.unclickableCards = false;
-    }, 1000);
-    
+    }, 5000);
+
   }
 }

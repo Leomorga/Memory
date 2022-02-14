@@ -1,10 +1,16 @@
 
-<div >
-  <h2>Memory</h2>
+<h2>Memory</h2>
+
+<div *ngIf="!gameActive">
+  <p>Welcome to Memory!</p>
+  <p>Press the button below to start the game.</p>
+  <div class="">
+    <button class="button" (click)="setBoard()">Play!</button>
+  </div>
 </div>
 
 <div *ngIf="gameActive">
-  <p class="text-center">
+  <p>
     Tap the cards to reveal the duplicates!
   </p>
   <div  class="grid">
